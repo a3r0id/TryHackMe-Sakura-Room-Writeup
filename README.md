@@ -1,4 +1,4 @@
-# TryHackMe Sukura Room Writeup
+# TryHackMe Sakura Room Writeup
  A quick writeup on TryHackMe.com's Sakura Room by The OSINT Dojo
 
 The following is a write-up on TryHackMe.com's room called “Sakura” by OSINT Dojo. This write-up will not necessarily solve the room for you but instead should give you a bit more insight on how you can go about the challenge based on my experience while completing the room. Keep reading to get the full scoop of what I learned and how I completed the task. I am in no sense a professional OSINT practitioner and this write-up should not be taken as industry-standard advice or procedural learning but simply as a complimentary sharing of my knowledge.
