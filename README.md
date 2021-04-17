@@ -1,16 +1,24 @@
 # TryHackMe Sakura Room Writeup
  A quick writeup on TryHackMe.com's Sakura Room by The OSINT Dojo
 
+## Links:
+
+[Sakura Room](https://tryhackme.com/room/sakura)
+
+[osintdojo.com](https://www.osintdojo.com/)
+
+![](https://tryhackme-badges.s3.amazonaws.com/hostinfosec.png)
+
 The following is a write-up on TryHackMe.com's room called “Sakura” by OSINT Dojo. This write-up will not necessarily solve the room for you but instead should give you a bit more insight on how you can go about the challenge based on my experience while completing the room. Keep reading to get the full scoop of what I learned and how I completed the task. I am in no sense a professional OSINT practitioner and this write-up should not be taken as industry-standard advice or procedural learning but simply as a complimentary sharing of my knowledge.
 
 Upon getting started on the room, you’ll be introduced to a juicy backstory which includes an imaginary incident in which The OSINT Dojo was hacked and a single image was left behind by the attacker. Great, a typical, edgy black-hat who simply wants to cause havoc. Let’s go ahead and enumerate all of the information that we have been provided with.
 
 The instructions will give you a huge jump on the investigation so let’s make things interesting and completely ignore them for now and just work off of the initial information that has been provided. Our first step in any OSINT investigation is to aggregate all the information that we have on our target to one central notebook/enumeration software. This, being a blog, will pretty much constrain us to text and imagery but I will also be linking some online tools/resources as this investigation will not require any software to complete and can be done by using only online services, making this an easy-to-follow write-up.
-Go ahead and write the URL of the image down in a new empty document in your notebook so we don’t have to keep jumping back the room. You should practice this with every piece of information you gather during an investigation so we aren’t loosing leads or mixing up data. 
+Go ahead and write the URL of the image down in a new empty document in your notebook so we don’t have to keep jumping back to the room for information. You should practice this with every piece of information you gather during an investigation so we aren’t loosing leads or mixing up data. This also ensures we have an organized case to present to upper management/law enforcement (if needed). 
 
 # [1] TIP-OFF
 
-Upon first glance, the image is fairly basic and not much can be said about it’s author. Initially, I’ll look for useful information in the presentation (the photograph) of an image file before subsequently checking for metadata  & hidden information within the image file itself. Scouring the presentation of an image typically consists of looking for readable text, symbols, faces and in some cases pin-able geographic features but can go even further in-depth with advanced stenography practices which we will not get into today, for the sake of me remaining young while writing this. Related: I recently wrote a simple Python script that allows you to append encrypted messages/data to any (image) file that can only be decrypted with a private key (Fernet Encryption to be exact) that is possessed by the intended reader, here is the [script](https://gist.github.com/hostinfodev/cdb784bb37e12dad12445d79e11a6b10) if you’d like check it out.
+Upon first glance, the image is fairly basic and not much can be said about it’s author. Initially, I’ll look for useful information in the presentation (the actual photographic representation) of an image file before subsequently checking for metadata & hidden information within the image file itself. Scouring the presentation of an image typically consists of looking for readable text, symbols, faces and in some cases pin-able geographic features but can go even further in-depth with advanced steganography practices which search for patterns/watermarks in the image that might not be apparent to the human eye or even when decode/decrypted (multi-layered abstraction) which we will not get into today, for the sake of me remaining young while writing this. Related: I recently wrote a simple Python script that allows you to append encrypted messages/data to any (image) file that can only be decrypted with a private key (Fernet Encryption to be exact) that is possessed by the intended reader, here is the [script](https://gist.github.com/hostinfodev/cdb784bb37e12dad12445d79e11a6b10) if you’d like check it out.
 
 Since we haven’t found much on the presentation side of things let’s see what’s under the hood.
 During my experience, I quickly resorted to examining the image file for artifacts. Since “sakurapwnedletter.svg”’s file-type is SVG, we can expect a decent amount of information since Scalable Vector Graphics (.SVG) is an XML-based file that is not in binary/encrypted. This means we can open the file in a text-editor and read all of the data contained without needing to decode it or execute it in an another program.
@@ -149,12 +157,15 @@ Resources:
 - https://maps.google.com
 - Your Prefrontal Cortex
 
-# Concusion:
+# Conclusion:
 
 I hope you enjoyed this write-up and learned a few new basic skills.
 I’d like to personally thank OSINT Dojo for creating an awesome room that is pure OSINT and I hope to see more in the future!
 
-This is literally my first write-up and I had a great time sharing my experience with you all so this definitely won’t be my last.
+This is literally my first write-up as well as my first completed room on THM.
+I had a great time sharing my experience with you all so this definitely won’t be my last.
+
+For any edit requests/feedback, or simply to say hey, please dm me on Discord @Aero#9306.
 
 If you would like to buy me a coffee:
 https://ko-fi.com/hostinfodev.
