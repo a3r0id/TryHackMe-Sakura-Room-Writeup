@@ -14,6 +14,7 @@
 [osintdojo.com](https://www.osintdojo.com/)
 
 [My THM Profile](https://tryhackme.com/p/hostinfosec)
+![](https://tryhackme-badges.s3.amazonaws.com/hostinfosec.png)
 
 ![](https://raw.githubusercontent.com/hostinfodev/TryHackMe-Sakura-Room-Writeup/main/images/hostinfosec.png)
 
@@ -122,7 +123,7 @@ Home WiFi: 					DK1F-G			Fsdf324T@@
 
 It is safe to assume that we have found the post and it’s URL(http://depastedihrn3jtw.onion/show.php?md5={THE_HASH_FROM_EARLIER}) which is in fact a flag.
 
-The next flag calls for the attackers “HOME” BSSID, this sounds like a long shot but with modern wardriving/WAP mapping techniques, but a lot can actually be dug up on a great service called https://wigle.net. Not every Wireless Access Point is mapped on Wigle but it still contains a huge amount. On Wigle, I simply entered the attackers home SSID into the filter and was quickly given a single result that led to a city in Japan, the BSSID was directly above the SSID which was the flag as well as the City in the next challenge as that is the city by which the attacker considers “HOME”.
+The next flag calls for the attackers “HOME” BSSID, this sounds like a long shot but with modern wardriving/WAP mapping techniques, but a lot can actually be dug up on a great service called https://wigle.net. Not every Wireless Access Point is mapped on Wigle but it still contains a huge amount. On Wigle, I simply entered the attackers home SSID into the filter and was quickly given a single result that led to a city in Japan, (Edit: you need to manually move the map to japan and look for the single result which will be a tiny purple dot, depending on your current zoom) the BSSID was directly above the SSID which was the flag as well as the City in the next challenge as that is the city by which the attacker considers “HOME”.
 
 ![](https://raw.githubusercontent.com/hostinfodev/TryHackMe-Sakura-Room-Writeup/main/images/wigle.png)
 
