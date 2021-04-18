@@ -102,7 +102,7 @@ Upon trying a few of them all were down except http://depastedihrn3jtw.onion, wh
 
 ![](https://raw.githubusercontent.com/hostinfodev/TryHackMe-Sakura-Room-Writeup/main/images/EsdhaUSVkAAM803.png)
 
-When I searched the MD5 hash (0a5c6e136a98a60b8a21643ce8c15a74) from the screenshot on Deep Paste I successfully found the post and it read the following:
+When I searched the MD5 hash (0a5c6e136a98a60b8a21643ce8c15a74) from the screenshot on Deep Paste I successfully found the paste which contained the following text:
 
 ```
 Saving here so I do not forget
@@ -141,18 +141,18 @@ There’s a few more posts that contain images on the attacker’s Twitter that 
 
 Firstly, the attacker has retweeted a picture involving cherry blossoms in Bethesda, Maryland which is located just northwest of Washington, D.C. 
 
-Maybe this is where the attacker was at one point and even possibly the location where she carried out the attack. In another post, the attacker has actually uploaded their own media, which is looks to be genuinely taken by the attacker and shows some vital geographic features, even a unique monumental landmark. In the lower-middle of the image you can barely make out the Washington Monument at the National Mall in Washington D.C, USA.
+Maybe this is where the attacker was at one point and even possibly the location where she carried out the attack. In another post, the attacker has actually uploaded their own media, which looks to be genuinely taken by the attacker and shows some vital geographic features, even a unique monumental landmark. In the lower-middle region of the image you can barely make out the Washington Monument at the National Mall in Washington D.C, USA.
 
-The first flag of Task #6 calls for the three-letter airport code that is nearest to this image in which the attackers has boarded a flight. At this point, all we need to do is find the nearest airport to the Washington Monument.
+The first flag of Task #6 calls for the three-letter airport code that is nearest to this image in which the attacker has boarded a flight. At this point, all we need to do is find the nearest airport to the Washington Monument.
 
 Another image that the attacker uploaded contains the readable text “JAL - First Class Lounge - Sakura Lounge”. Let’s go back to trusty Google search and see what we can find, let’s try searching “JAL+First Class Lounge+Sakura Lounge”.
-The top result should be “https://www.jal.co.jp/en/inter/service/lounge/hnd/first/”, which, upon review of the lounge, seems to match the the photograph, therefore this is a flag! 
+The top result should be “https://www.jal.co.jp/en/inter/service/lounge/hnd/first/”, which, upon review of the lounge, seems to match the the photograph, therefore this is probably a flag! 
 
 Lastly, the attacker has posted a map on their Twitter that is quoted “Sooo close to home! Can't wait to finally be back! :)”. Task #6 - Flag #3 asks for ”the name of the lake that can be seen in the map shared by the attacker as they were on their final flight home ”. Since we know home is most likely in Japan. Let’s pull up maps.google.com. Controlling the map view, fly over to Japan and flip on Satellite view. I tried this image against a Google image search in hopes of identifying the exact region depicted in the image but came up with limited results. There is also online services such as https://discover.digitalglobe.com/ that allow you to search by “shapefile/KML” which can be extremely useful but we won’t be getting into that now. Luckily this image displays a fairly large region and is in exceptional quality so we can manually search on Google maps to match the map with a region and ultimately figure out what lake this is. Personally, I’ll look for the largest landmark when searching from above. In this case we’ll use the island on the left, which turns out to be Sado Island.
 Once Sado Island is found on Google Maps, we can move our attention inland and behold, we have found our lake and ultimately the 2nd to last flag!
 
 Now the last flag I’ll let you do on your own, remember what we found on Wigle?
-The BSSID that we found belonged to a Wireless Access Point in what city?
+The BSSID that we found belonged to a Wireless Access Point in **what** city?
 
 Good luck!
 
