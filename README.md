@@ -1,6 +1,12 @@
 # TryHackMe Sakura Room Writeup
  A quick writeup on TryHackMe.com's Sakura Room by The OSINT Dojo
 
+## Official Video Walkthrough by OSINT Dojo
+
+[Official Walkthrough By The OSINT Dojo | Steps 1-3](https://www.youtube.com/watch?v=bR0NJn1Xqog)
+
+[Subscribe To OSINT Dojo on Youtube](https://www.youtube.com/watch?v=bR0NJn1Xqog)
+
 ## Links:
 
 [Sakura Room](https://tryhackme.com/room/sakura)
