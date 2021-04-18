@@ -7,7 +7,9 @@
 
 [osintdojo.com](https://www.osintdojo.com/)
 
-![](https://tryhackme-badges.s3.amazonaws.com/hostinfosec.png)
+[My THM Profile](https://tryhackme.com/p/hostinfosec)
+
+![]()
 
 The following is a write-up on TryHackMe.com's room called “Sakura” by OSINT Dojo. This write-up will not necessarily solve the room for you but instead should give you a bit more insight on how you can go about the challenge based on my experience while completing the room. Keep reading to get the full scoop of what I learned and how I completed the task. I am in no sense a professional OSINT practitioner and this write-up should not be taken as industry-standard advice or procedural learning but simply as a complimentary sharing of my knowledge.
 
@@ -73,6 +75,10 @@ The first 3/4 flags of Task #4 can already be answered with the information we h
 Since we have the attacker’s wallet address, we can view all of their transactions as all Cryptocurrency transactions are OSINT.
 Using https://etherscan.io, we can see the wallet’s entire history, leading to the remaining flags of Task #4.
 
+![](https://github.com/hostinfodev/TryHackMe-Sakura-Room-Writeup/blob/main/images/wallet.png)
+
+![](https://raw.githubusercontent.com/hostinfodev/TryHackMe-Sakura-Room-Writeup/main/images/wallet_pool_txn.png)
+
 Artifacts:
 - https://github.com/{username-1-Lowercase}/ETH/commit/5d83f7bb37c2048bb5b9eb29bb95ec1603c40135#diff-ed62f5e8bb5f88d470bd6a8aa3cf3c18ad1be17b29153b4896f45e7e57cfb5da
 - stratum://{WALLET_ADDRESS}.{USERNAME}:{PASSWORD}@{POOL_ADDRESS}:{PORT}
@@ -94,6 +100,8 @@ Upon scrolling through {username-2}’s Twitter account, I noticed a post that c
 In the attacker’s post, it also hints towards “DEEP” & “PASTE” which hints towards a deep web pastebin-like service. To get the latest working links to hidden paste services lets head to https://deepweblinks.net/pastebin/.
 Upon trying a few of them all were down except http://depastedihrn3jtw.onion, which seems to match the screenshot taken by the attacker. This hidden service is called “Deep Paste” and allows users to paste any text they want, so you can image it’s a cesspool of the worst of the web, let’s just stay off of there for today.
 
+![](https://raw.githubusercontent.com/hostinfodev/TryHackMe-Sakura-Room-Writeup/main/images/EsdhaUSVkAAM803.png)
+
 When I searched the MD5 hash (0a5c6e136a98a60b8a21643ce8c15a74) from the screenshot on Deep Paste I successfully found the post and it read the following:
 
 ```
@@ -109,6 +117,8 @@ Home WiFi: 					DK1F-G			Fsdf324T@@
 It is safe to assume that we have found the post and it’s URL(http://depastedihrn3jtw.onion/show.php?md5={THE_HASH_FROM_EARLIER}) which is in fact a flag.
 
 The next flag calls for the attackers “HOME” BSSID, this sounds like a long shot but with modern wardriving/WAP mapping techniques, but a lot can actually be dug up on a great service called https://wigle.net. Not every Wireless Access Point is mapped on Wigle but it still contains a huge amount. On Wigle, I simply entered the attackers home SSID into the filter and was quickly given a single result that led to a city in Japan, the BSSID was directly above the SSID which was the flag as well as the City in the next challenge as that is the city by which the attacker considers “HOME”.
+
+![](https://raw.githubusercontent.com/hostinfodev/TryHackMe-Sakura-Room-Writeup/main/images/wigle.png)
 
 New Developments:
 - https://raw.githubusercontent.com/OsintDojo/OsintDojo.github.io/main/TryHackMe/Sakura/taunt.png
