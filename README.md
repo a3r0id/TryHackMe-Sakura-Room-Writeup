@@ -41,7 +41,7 @@ Artifacts:
 - inkscape:export-filename="/home/xxxxxxxxxx/Desktop/pwnedletter.png"
 
 Resources:
-- https://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Compression
+- https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
 - https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata
 
 
