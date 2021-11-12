@@ -105,7 +105,7 @@ I’m not going to give this one away as it is directly a flag so let’s refer 
 The next flag calls for a link to where the attacker saved their WiFi passwords and SSIDs.
 Upon scrolling through {username-2}’s Twitter account, I noticed a post that contains the text “Regular WiFi and Passwords”.
 In the attacker’s post, it also hints towards “DEEP” & “PASTE” which hints towards a deep web pastebin-like service. To get the latest working links to hidden paste services lets head to https://deepweblinks.net/pastebin/.
-Upon trying a few of them all were down except http://depastedihrn3jtw.onion, which seems to match the screenshot taken by the attacker. This hidden service is called “Deep Paste” and allows users to paste any text they want, so you can image it’s a cesspool of the worst of the web, let’s just stay off of there for today.
+Upon trying a few of them all were down except http://depastedihrn3jtw.onion, which seems to match the screenshot taken by the attacker. This hidden service is called “Deep Paste” and allows users to paste any text they want, so you can imagine it’s a cesspool of the worst of the web, let’s just stay off of there for today.
 
 ![](https://raw.githubusercontent.com/hostinfodev/TryHackMe-Sakura-Room-Writeup/main/images/EsdhaUSVkAAM803.png)
 
