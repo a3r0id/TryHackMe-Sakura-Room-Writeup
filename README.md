@@ -25,7 +25,7 @@ Upon getting started on the room, you’ll be introduced to a juicy backstory wh
 The instructions will give you a huge jump on the investigation so let’s make things interesting and completely ignore them for now and just work off of the initial information that has been provided. Our first step in any OSINT investigation is to aggregate all the information that we have on our target to one central notebook/enumeration software. This, being a blog, will pretty much constrain us to text and imagery but I will also be linking some online tools/resources as this investigation will not require any software to complete and can be done by using only online services, making this an easy-to-follow write-up.
 Go ahead and write the URL of the image down in a new empty document in your notebook so we don’t have to keep jumping back to the room for information. You should practice this with every piece of information you gather during an investigation so we aren’t loosing leads or mixing up data. This also ensures we have an organized case to present to upper management/law enforcement (if needed). 
 
-# [1] TIP-OFF
+# TIP-OFF
 
 Upon first glance, the image is fairly basic and not much can be said about it’s author. Initially, I’ll look for useful information in the presentation (the actual photographic representation) of an image file before subsequently checking for metadata & hidden information within the image file itself. Scouring the presentation of an image typically consists of looking for readable text, symbols, faces and in some cases pin-able geographic features but can go even further in-depth with advanced steganography practices which search for patterns/watermarks in the image that might not be apparent to the human eye or even when decode/decrypted (multi-layered abstraction) which we will not get into today, for the sake of me remaining young while writing this.
 
@@ -45,7 +45,7 @@ Resources:
 - https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata
 
 
-# [3] RECONNAISSANCE
+# RECONNAISSANCE
 
 Now that we have our first lead, let’s move forward and see where it takes us.
 When given a username in an investigation, my first move is a simple Google search, which in fact is one of the most effective OSINT tools in existence. Google scrapes and archives almost every site on the web, and effectively every popular site in general. A quick search of {username-1} returns two major social media links to {username-1} which consists of Reddit user @{username-1} and a jp.linkedin.com account that is also handled by a “{username-1}”. The Reddit account has not posted and doesn’t have any info provided besides a birthday, April 13th. The birthday might prove useful in a real-world investigation but in this case, to save time and be reasonable, we will deem this a false-positive. The Linkedin account proved otherwise as it contains a plethora of information and appears to represent a genuine individual. We have successfully found a full name that is consistent with the {username-1} as well as some other identifying information such as work/educational history. In a real-world investigation, this would not generally mean we have positively identified our attacker but for the sake of this write-up and it’s simplicity, just go ahead and try the full name as a flag, after all, it is one of the questions.
@@ -74,7 +74,7 @@ Resources:
 - https://protonmail.com/blog/what-is-pgp-encryption/
 
 
-# [4] UNVEIL
+# UNVEIL
 
 Task #4 asks for information about a crypto-wallet and hints that the information lies in {Jane Doe}’s Github account. Upon inspecting the attacker’s Contribution Activity on Github, I noticed a deleted repository titled “ETH”. The repo had two commits, the first of which seems to contain an accidental leak of the attacker’s mining pool URL, including an Ethereum address + password as well as hinting the mining pool that the attacker used. This severity of an  accidental information disclosure seems extremely unlikely but is more common in the wild than one might expect. We are all human.
 
@@ -94,7 +94,7 @@ Artifacts:
 Resources:
 - https://etherscan.io
 
-# [5] TAUNT
+# TAUNT
 
 After examining the screenshot of the Twitter exchange between our attacker and the OSINT Dojo Twitter account, 
 it stands out that the attacker is using another handle that we didn’t know about, “AikoAbe3”.
@@ -142,7 +142,7 @@ Resources:
 - https://wigle.net/
 
 
-# [6] HOMEBOUND
+# HOMEBOUND
 
 There’s a few more posts that contain images on the attacker’s Twitter that give us some great geographic insight on the attacker’s whereabouts.
 
